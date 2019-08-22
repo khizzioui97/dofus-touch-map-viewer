@@ -1,0 +1,21 @@
+nav {
+    position: absolute;
+    bottom: 0.5em;
+    left: 0.5em;
+}
+
+nav > button.btn-primary {
+    padding: 0.8em 1.8em;
+    border: 1px solid #a9a9a9;
+    background-color: #c7c7c7;
+}
+
+nav > button.btn-primary:hover {
+    cursor: pointer;
+    background-color: #d4d4d4;
+}
+
+
+nav > button.btn-primary > i.fas {
+    font-size: 17px;
+}

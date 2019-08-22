@@ -1,0 +1,17 @@
+{
+  "name": "world_map",
+  "version": "1.0.0",
+  "description": "A map viewer for dofus touch",
+  "main": "index.js",
+  "private": false,
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Zirpoo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1"
+  }
+}

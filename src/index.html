@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>World Map</title>
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+        <link rel="stylesheet" href="/css/interface.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    </head>
+    <body>
+        <canvas></canvas>
+        <nav id="interface">
+            <button type="button" class="btn-primary" data-action="toggle positions">
+                <i class="fas fa-search-location"></i>
+            </button>
+            <button type="button" class="btn-primary" data-action="toggle grid">
+                <i class="fas fa-th"></i>
+            </button>
+        </nav>
+        <script src="/js/config.js"></script>
+        <script src="/js/canvas.js"></script>
+        <script src="/js/interface.js"></script>
+    </body>
+</html>
