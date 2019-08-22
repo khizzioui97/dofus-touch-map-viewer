@@ -4,6 +4,8 @@ canvas.addEventListener("mousemove", event => {
         drawPath(event);
     }
 });
+togglePositionsButton.addEventListener("click", drawPath);
+toggleGridButton.addEventListener("click", drawPath);
 
 var opacity = 0.2;
 function drawPath() {
