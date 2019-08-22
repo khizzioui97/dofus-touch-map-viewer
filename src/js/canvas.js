@@ -52,7 +52,17 @@ ctx.drawLine = function(posX, posY, lx, ly) {
     const y = originY + posY;
 
     ctx.beginPath();
-    ctx.moveTo(x, y);
-    ctx.lineTo(x + lx, y + ly);
+    ctx.moveTo(x - 0.5, y + 0.5);
+    ctx.lineTo(x + lx - 0.5, y + ly + 0.5);
     ctx.stroke();
+}
+
+ctx.getPosition = function (x, y) {
+    ctx.globalAlpha = opacity;
+    ctx.translate(-grid.offsetY, -grid.offsetX);
+    const posX = originX - (grid.cols.width * (grid.start[0] - x));
+    const posY = originY - (grid.rows.width * (grid.start[1] - y));
+    ctx.fillRect(posX, posY + 1, grid.cols.width - 1, grid.rows.width - 1);
+    ctx.translate(grid.offsetY, grid.offsetX);
+    ctx.globalAlpha = 1.0;
 }
