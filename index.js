@@ -1,7 +1,7 @@
 var express = require('express'),
     path = require('path'),
     app = express(),
-    PORT = 3000,
+    PORT = 3095,
     index = 'index.html',
     assetsPath = '/src';
 
